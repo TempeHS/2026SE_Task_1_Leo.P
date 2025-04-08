@@ -24,7 +24,5 @@ def menu():
         register()
     elif selection == 3:
         quit()
-    else:
-        print("Invalid number.")
 
 menu()

@@ -2,6 +2,11 @@
 def login():
     username = input("Enter your username: ")
     password = input("Enter your password: ")
+    ## check login for correct username and password
+    ## IF password or username incorrect
+    ## reprompt user with login screen
+    ## IF password and username correct
+    ## prompt user with new menu 
 
 # register user
 def register():
@@ -19,6 +24,14 @@ def register():
 def quit():
     exit()
 
+def new_menu():
+    print("1. Change password")
+    print("2. Logout")
+    log_or_change = input("What would you like to do? ")
+    if log_or_change == 1:
+        print()
+    ## offer user new menu depending on input
+
 # User is offered a menu
 def menu():
     print("1. Login")
@@ -31,5 +44,7 @@ def menu():
         register()
     elif selection == 3:
         quit()
+    else:
+        print("Not a valid input.")
 
 menu()

@@ -1,5 +1,18 @@
-#register the user
+def login():
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
 
+def register():
+    chosen_username = input("Choose a username: ")
+    chosen_password = input("Choose a password: ")
+    i = chosen_password
+    while i < 4:
+        print("Your password must be a minimum of 4 characters.")
+
+def quit():
+    exit()
+
+# User is offered a menu
 def menu():
     print("1. Login")
     print("2. Register")
@@ -12,31 +25,6 @@ def menu():
     elif selection == 3:
         quit()
     else:
-        print("You have chosen an unsupported number.")
-
-def login():
-    username = input("Enter your username: ")
-    password = input("Enter your password: ")
-
-def register():
-    chosen_username = input("Choose a username: ")
-    chosen_password = input("Choose a password: ")
-
-def quit():
-    exit()
+        print("Invalid number.")
 
 menu()
-
-
-# ask user for their username and password
-
-##username = input("Enter username: ")
-##password = input("Enter password: ")
-
-
-
-
-# minimum 4 character password
-
-
-    
